@@ -1,76 +1,292 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beweggrund – Naturheilpraxis Ildo Fisch</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BEWEGGRUND – Naturheilkunde & manuelle Verfahren | Ildo Fisch</title>
+  <meta name="description" content="Praxis für Naturheilkunde und manuelle Verfahren in Triesenberg. Osteopathie, TEN, manuelle Therapie. Termine unter +423 390 11 12." />
+  <link rel="preload" href="assets/images/hero-1.jpg" as="image" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Beweggrund</div>
-    <nav class="nav">
-      <a href="#start">Start</a>
-      <a href="#arbeit">Meine Arbeit</a>
-      <a href="#vita">Curriculum Vitae</a>
-      <a href="#tarife">Tarife</a>
-      <a href="#lage">Lage</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+  <!-- Skip-Link für Barrierefreiheit -->
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="#start" aria-label="Startseite: BEWEGGRUND">
+        <!-- Minimal-Logo -->
+        <svg viewBox="0 0 100 24" aria-hidden="true" class="logo">
+          <text x="0" y="18" font-size="18" font-family="ui-sans-serif, system-ui" letter-spacing="1.5">BEWEGGRUND</text>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
+
+      <nav id="nav" class="nav" role="navigation" aria-label="Hauptnavigation">
+        <a href="#start">Start</a>
+        <a href="#arbeit">Meine Arbeit</a>
+        <a href="#vita">Curriculum Vitae</a>
+        <a href="#tarife">Krankenkasse & Tarife</a>
+        <a href="#lage">Lage</a>
+        <a href="#links">Links</a>
+        <a class="btn btn-primary" href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="start" class="hero">
-    <div class="hero-content">
-      <h1>Herzlich willkommen bei BEWEGGRUND</h1>
-      <p>Praxis für Naturheilkunde & Osteopathie in Triesenberg, Liechtenstein</p>
-      <a href="#kontakt" class="btn">Termin vereinbaren</a>
+  <main id="main">
+    <!-- HERO mit sanftem Slider -->
+    <section id="start" class="hero" aria-label="Einführung">
+      <div class="hero-slider" data-slider>
+        <picture class="hero-slide is-active">
+          <img src="assets/images/hero-1.jpg" alt="Ruhige Natur: beruhigende Umgebung für Heilung" loading="eager" />
+        </picture>
+        <picture class="hero-slide">
+          <img src="assets/images/hero-2.jpg" alt="Detailaufnahme: Hände in manueller Behandlung" loading="lazy" />
+        </picture>
+        <picture class="hero-slide">
+          <img src="assets/images/hero-3.jpg" alt="Praxis-Atmosphäre: warmes Licht und natürliche Materialien" loading="lazy" />
+        </picture>
+      </div>
+
+      <div class="hero-content container">
+        <h1 class="headline">
+          Praxis für Naturheilkunde<br class="br-xl" /> und manuelle Verfahren
+        </h1>
+        <p class="subhead">Ildo Fisch · Triesenberg, Liechtenstein</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Termin vereinbaren</a>
+          <a href="#arbeit" class="btn btn-ghost">Leistungen ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEINE ARBEIT -->
+    <section id="arbeit" class="section">
+      <div class="container flow" data-reveal>
+        <h2>Meine Arbeit</h2>
+        <p>
+          Ich biete individuelle naturheilkundliche und osteopathische Behandlungen an, um Ihre Gesundheit ganzheitlich und nachhaltig zu fördern. Im Mittelpunkt stehen
+          <strong>Therapie nach TEN</strong> (Traditionelle Europäische Naturheilkunde), <strong>Osteopathie</strong> sowie <strong>manuelle Verfahren</strong>, abgestimmt auf Ihre Bedürfnisse.
+        </p>
+        <div class="feature-grid">
+          <article class="card" data-reveal>
+            <h3>Osteopathie</h3>
+            <p>Fein abgestimmte manuelle Techniken zur Verbesserung der Funktion und Mobilität – für Menschen jeden Alters.</p>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Naturheilkunde (TEN)</h3>
+            <p>Methoden der europäischen Naturheilkunde – konstitutionsbezogen, ressourcenorientiert, vorbeugend.</p>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Manuelle Verfahren</h3>
+            <p>Sanfte, zielgerichtete Grifftechniken, um Spannungen zu lösen und Selbstregulation zu unterstützen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VITA -->
+    <section id="vita" class="section section-alt">
+      <div class="container vita-grid">
+        <div class="vita-photo" data-reveal>
+          <img src="assets/images/ildo.jpg" alt="Porträt von Ildo Fisch" loading="lazy" />
+        </div>
+
+        <div class="flow" data-reveal>
+          <h2>Curriculum Vitae</h2>
+
+          <h3>Person</h3>
+          <ul class="list">
+            <li><strong>Name:</strong> Fisch</li>
+            <li><strong>Vorname:</strong> Ildo</li>
+            <li><strong>Geboren:</strong> 14. November 1975</li>
+            <li><strong>Heimatort:</strong> Herisau/AR</li>
+          </ul>
+
+          <h3>Ausbildungen</h3>
+          <ul class="list">
+            <li><strong>2013–2015:</strong> dipl. Naturheilpraktiker TEN, Paramed Baar (2½-jähriges berufsbegleitendes Studium)</li>
+            <li><strong>2003–2008:</strong> dipl. Osteopath, College Sutherland, Ulm (5-jähriges berufsbegleitendes Studium)</li>
+            <li><strong>1998–2001:</strong> Med. Masseur FA SRK, St. Gallen (3-jährige Vollzeitausbildung)</li>
+            <li><strong>1994:</strong> Abschluss kaufmännische Ausbildung, Bern</li>
+          </ul>
+
+          <h3>Weiterbildungen</h3>
+          <ul class="list two-cols">
+            <li>2017–2019: Kursorga & Assistenz „Grow Your Skills“ – Tim Marris DO MSSC</li>
+            <li>2014–2017: Kursorga & Teilnahme „Grow Your Skills“ – Tim Marris DO MSSC</li>
+            <li>2013: „Trust Your Hands“, Tim Marris, Hamburg</li>
+            <li>2013: Grundkurs Craniosacral-Movement, Rudolf Merkel, Zürich</li>
+            <li>2012: „Osteopathy in the Cranial Field“, SCC, Proitzer Mühle</li>
+            <li>2010–2012: Qualitative viszerale Osteopathie, J. Gschwend & T. Hirth, Zürich</li>
+            <li>2009–2011: Pädiatrie 1–4, Eva Möckel & Noori Mitha, Hamburg</li>
+            <li>2009: Periphere Techniken nach Dr. Sutherland, SCC</li>
+            <li>2001–2002: Viszerale Manipulation, Dr. Vodder Schule, Walchsee</li>
+          </ul>
+
+          <h3>Berufliches</h3>
+          <p>
+            Nach Abschluss der Grundausbildung in St. Gallen Tätigkeit als Med. Masseur in Lausanne (Physiothérapie et Rééducation DINO, Renens, 17 Monate).
+            Ab 10/2002 Leitung der Physikalischen Therapie am Medizinischen Zentrum Bad Ragaz.
+            Ab 09/2007 Mitinhaber der Praxis BEWEGGRUND. in Chur; parallel bis 08/2011 freier Mitarbeiter in der Osteopathiepraxis von M. van Geffen (FL).
+            Ab 09/2011 vollumfänglich in der Praxis in Chur tätig; seit 09/2016 Praxis in Triesenberg (Liechtenstein).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARIFE -->
+    <section id="tarife" class="section">
+      <div class="container flow" data-reveal>
+        <h2>Krankenkasse & Tarife</h2>
+        <p>
+          Die Kosten meiner Behandlung werden im Rahmen Ihrer Zusatzversicherung (VVG) von Ihrer Krankenkasse mitgetragen.
+          Sie benötigen <strong>keine</strong> Verordnung/Überweisung. Bitte klären Sie die Kostendeckung direkt mit Ihrer Kasse (in der Regel ca. 75%).
+        </p>
+
+        <div class="pricing">
+          <div class="price-card">
+            <h3>60 Minuten</h3>
+            <p class="price">sFr. 150.—</p>
+          </div>
+          <div class="price-card">
+            <h3>45 Minuten</h3>
+            <p class="price">sFr. 120.—</p>
+          </div>
+          <div class="price-card">
+            <h3>30 Minuten</h3>
+            <p class="price">sFr. 90.—</p>
+          </div>
+        </div>
+
+        <p>Bei Fragen stehe ich Ihnen gerne telefonisch oder per E-Mail zur Verfügung.</p>
+      </div>
+    </section>
+
+    <!-- LAGE -->
+    <section id="lage" class="section section-alt">
+      <div class="container flow" data-reveal>
+        <h2>Lage & Anfahrt</h2>
+        <p>
+          <strong>BEWEGGRUND – Ildo Fisch</strong><br/>
+          Bergstrasse 3 · FL-9497 Triesenberg
+        </p>
+        <div class="map-wrap">
+          <iframe
+            title="Karte: Bergstrasse 3, 9497 Triesenberg"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Bergstrasse%203%2C%209497%20Triesenberg&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links" class="section">
+      <div class="container flow" data-reveal>
+        <h2>Links</h2>
+        <div class="links-grid">
+          <div>
+            <h3>Ausbildungsorte</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noopener" href="https://www.paramed.ch/">Paramed</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.college-sutherland.de/">College Sutherland</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.sgmf.ch/">SGMF</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Weiterbildungsorte</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noopener" href="https://www.mitha-moeckel.com/">Mitha & Möckel</a></li>
+              <li><a target="_blank" rel="noopener" href="http://www.mithasonntag.de">Mitha & Sonntag</a></li>
+              <li><a target="_blank" rel="noopener" href="http://www.scco.ac">SCCO</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.qualitative-visceral-osteopathy.com">Qualitative viszerale Osteopathie</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.paramed.ch/akademie/">Paramed Akademie</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Qualitätsregister</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noopener" href="https://www.emr.ch/">EMR</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.asca.ch/">ASCA</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.stiftung-sne.ch/">Stiftung SNE</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Kollegen & Infos</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noopener" href="https://www.praxis-beweggrund.ch/">Praxis Beweggrund Chur</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.mueller-osteopathie.ch/">Mueller Osteopathie</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.fasciaresearch.de/">Fascia Research Group</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Freunde</h3>
+            <ul class="links">
+              <li><a target="_blank" rel="noopener" href="https://www.wortbild-vieli.ch/">wortbild-vieli</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.cmsbox.com/">cmsbox</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.photo.li/">photo.li</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section-accent">
+      <div class="container contact-grid" data-reveal>
+        <div class="flow">
+          <h2>Kontakt</h2>
+          <address class="contact">
+            <strong>Praxis für Naturheilkunde und manuelle Verfahren</strong><br />
+            Ildo Fisch<br />
+            Bergstrasse 3 · FL-9497 Triesenberg<br />
+            Telefon <a href="tel:+4233901112">00423 390 11 12</a><br />
+            <a href="mailto:ildo.fisch@beweggrund.li">ildo.fisch@beweggrund.li</a>
+          </address>
+          <p>Ich freue mich auf Ihre Nachricht oder Ihren Anruf.</p>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>E-Mail</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label class="span-2">
+            <span>Nachricht</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn-primary span-2" type="submit">Nachricht senden</button>
+          <p class="form-note span-2" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> BEWEGGRUND – Ildo Fisch. Alle Rechte vorbehalten.</p>
+      <nav class="footer-nav" aria-label="Fußnavigation">
+        <a href="#start">Start</a>
+        <a href="#arbeit">Meine Arbeit</a>
+        <a href="#vita">Vita</a>
+        <a href="#tarife">Tarife</a>
+        <a href="#lage">Lage</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
     </div>
-  </section>
-
-  <section id="arbeit" class="section">
-    <h2>Meine Arbeit</h2>
-    <p>Ich biete individuelle naturheilkundliche und osteopathische Behandlungen an, um Ihre Gesundheit nachhaltig zu fördern.</p>
-  </section>
-
-  <section id="vita" class="section alt">
-    <h2>Curriculum Vitae</h2>
-    <ul>
-      <li>Ausbildung in Osteopathie</li>
-      <li>Fortbildungen in manueller Therapie</li>
-      <li>Langjährige Praxiserfahrung</li>
-    </ul>
-  </section>
-
-  <section id="tarife" class="section">
-    <h2>Krankenkasse & Tarife</h2>
-    <p>Informationen zu den Leistungen, Tarifen und Kostenerstattung durch Ihre Krankenkasse.</p>
-  </section>
-
-  <section id="lage" class="section alt">
-    <h2>Lage & Anfahrt</h2>
-    <p>Bergstrasse 3, FL-9497 Triesenberg</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!..." 
-      style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </section>
-
-  <section id="kontakt" class="section">
-    <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:ildo.fisch@beweggrund.li">ildo.fisch@beweggrund.li</a></p>
-    <p>Telefon: +423 xxx xx xx</p>
-    <form>
-      <input type="text" placeholder="Ihr Name" required />
-      <input type="email" placeholder="Ihre E-Mail" required />
-      <textarea placeholder="Ihre Nachricht" required></textarea>
-      <button type="submit">Nachricht senden</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Beweggrund – Ildo Fisch. Alle Rechte vorbehalten.</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
